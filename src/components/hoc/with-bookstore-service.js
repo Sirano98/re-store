@@ -3,20 +3,20 @@ import { BookServiceConsumer } from "../bookstore-service-context/bookstore-serv
 
 const withBookStoreService = () => (Wrapped) => {
 
-return (props) => {
-    return (
-        <BookServiceConsumer>
-            {
-                (withBookStoreService) => {
-                    return(
-                        <Wrapped {...props} 
-                        withBookStoreService={withBookStoreService}/>
-                    )
+    return (props) => {
+        return (
+            <BookServiceConsumer>
+                {
+                    (bookstoreService) => {
+                        return (
+                            <Wrapped {...props}
+                                bookstoreService={bookstoreService} />
+                        )
+                    }
                 }
-            }
-        </BookServiceConsumer>
-    );
-}
+            </BookServiceConsumer>
+        );
+    }
 
 };
 
