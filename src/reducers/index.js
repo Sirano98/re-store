@@ -1,18 +1,19 @@
+
 const initialState = {
-    books: []
-}
+  books: []
+};
 
 const reducer = (state = initialState, action) => {
 
-    switch (action.type) {
-        case 'BOOKS_LOADED':
-            return {
-                books: action.payload
-            };
+  switch (action.type) {
+    case 'BOOKS_LOADED':
+      return {
+        books: action.payload
+      };
 
-        default:
-            return state;
-    }
-}
+    default:
+      return state;
+  }
+};
 
 export default reducer;
