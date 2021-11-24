@@ -32,7 +32,7 @@ const bookRemovedFromCart = (bookId) => {
   }
 }
 
-const AllBooksRemovedFromCart = (bookId) => {
+const allBooksRemovedFromCart = (bookId) => {
   return {
     type: 'ALL_BOOKS_REMOVED_FROM_CART',
     payload: bookId
@@ -50,5 +50,5 @@ export {
   fetchBooks,
   bookAddedToCart,
   bookRemovedFromCart,
-  AllBooksRemovedFromCart
+  allBooksRemovedFromCart
 };
