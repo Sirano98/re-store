@@ -1,3 +1,3 @@
 React, redux practice project.  
 
-https://blissful-cori-bfcba7.netlify.app/cart
+https://blissful-cori-bfcba7.netlify.app/
